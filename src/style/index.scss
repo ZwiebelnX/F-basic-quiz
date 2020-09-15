@@ -71,6 +71,11 @@
   }
 }
 
+.basic-info-image {
+  width: 300px;
+  height: 300px;
+}
+
 .education-title {
   @extend .content-title;
   margin-top: 50px;
