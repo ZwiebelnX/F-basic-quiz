@@ -20,6 +20,18 @@ const fetchUserEducationInfo = async (userId) => {
     `http://localhost:8080/users/${userId}/educations`
   );
   const data = await response.json();
-  console.log(data);
+  const educationList = document.getElementById("education-list");
+  data.forEach((education) => {
+    const newEducationNode = document.createElement("li");
+    newEducationNode.innerHTML = `
+      <div class="education-item-container">
+        <h2 class="education-item-year">${education.year}</h2>
+        <div class="education-item-content">
+        <h3 class="education-item-title">${education.title}</h3>
+        <p class="education-item-description">${education.description}</p>
+      </div>
+    `;
+    educationList.appendChild(newEducationNode);
+  });
 };
 export { fetchUserInfo, fetchUserEducationInfo };

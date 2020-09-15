@@ -1,5 +1,5 @@
 import "./style/index.scss";
-import { fetchUserInfo } from "./scripts/fetchData";
+import { fetchUserEducationInfo, fetchUserInfo } from "./scripts/fetchData";
 
 let userId = window.location.pathname.split("/").pop();
 if (!/\d+/.test(userId)) {
@@ -7,3 +7,4 @@ if (!/\d+/.test(userId)) {
 }
 
 fetchUserInfo(userId).then();
+fetchUserEducationInfo(userId).then();
