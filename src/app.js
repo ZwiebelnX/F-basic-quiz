@@ -1,8 +1,10 @@
 import "./style/index.scss";
 import { fetchUserEducationInfo, fetchUserInfo } from "./scripts/fetchData";
 
-let userId = window.location.pathname.split("/").pop();
-if (!/\d+/.test(userId)) {
+const pathArray = window.location.pathname.split("/");
+let userId = pathArray.pop();
+const path = pathArray.pop();
+if (!/\d+/.test(userId) || path !== "users") {
   userId = 1;
 }
 
