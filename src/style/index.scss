@@ -9,7 +9,7 @@
   padding: 2%;
 }
 
-.basic-info {
+.basic-info-section {
   display: flex;
   flex-flow: column;
   text-align: center;
@@ -43,5 +43,19 @@
 .main-bar {
   margin: 15px 0;
   border: 2px solid $gray;
-  opacity: 0.5;
+  opacity: 0.1;
+}
+
+.about-me-title {
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  color: $primary-color;
+}
+
+.about-me-content {
+  margin: 20px 0;
+  padding: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
