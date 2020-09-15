@@ -1,3 +1,38 @@
 @import "variables";
 @import "mixins";
 @import "reboot";
+
+.main {
+  background-color: $white;
+  width: 80%;
+  margin: auto;
+  margin-top: 200px;
+  padding: 2%;
+}
+
+.basic-info {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  justify-content: center;
+
+  p {
+    padding: 0;
+    margin: 5px;
+    font-size: 3rem;
+    font-weight: bolder;
+  }
+}
+
+.basic-info-image {
+  position: relative;
+  top: -105px;
+  margin: -65px;
+  border-radius: 100%;
+}
+
+.main-bar {
+  margin: 15px 0;
+  border: 2px solid $gray;
+  opacity: 0.5;
+}
