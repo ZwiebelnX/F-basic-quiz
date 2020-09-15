@@ -43,5 +43,9 @@
   "lint-staged": {
     "*.js": "eslint \"src/\" --cache --fix --format table",
     "*.{js,css,scss,html}": "prettier --write"
+  },
+  "dependencies": {
+    "fetch-mock": "^9.10.7",
+    "node-fetch": "^2.6.1"
   }
 }
