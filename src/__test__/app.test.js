@@ -36,6 +36,7 @@ beforeEach(() => {
   `;
 });
 
+// TODO feedback: 测试未通过
 test("should call fetch user info api", async () => {
   await fetchUserInfo(1);
 
